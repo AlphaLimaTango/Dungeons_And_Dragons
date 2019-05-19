@@ -7,7 +7,6 @@ import FanatasyAdventure.rooms.TreasureRoom;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.TreeSet;
 
 import static org.junit.Assert.assertEquals;
 

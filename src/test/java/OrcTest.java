@@ -1,5 +1,4 @@
-package FanatasyAdventure.Enemies;
-
+import FanatasyAdventure.Enemies.Orc;
 import FanatasyAdventure.Players.Melee.Barbarian;
 import FanatasyAdventure.Players.Protection;
 import FanatasyAdventure.Players.Race;
