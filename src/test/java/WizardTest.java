@@ -1,4 +1,6 @@
+import FanatasyAdventure.Players.Creature;
 import FanatasyAdventure.Players.Race;
+import FanatasyAdventure.Players.Spell;
 import FanatasyAdventure.Players.magician.Wizard;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,5 +26,20 @@ public class WizardTest {
         assertEquals(null, wizard.getMythicalCreature());
     }
 
+    @Test
+    public void startsWithNullSpell(){
+        assertEquals(null, wizard.getCast());
+    }
 
+    @Test
+    public void canSetCreature(){
+        wizard.setMythicalCreature(Creature.DRAGON);
+        assertEquals(Creature.DRAGON, wizard.getMythicalCreature());
+    }
+
+    @Test
+    public void canSetSpell(){
+        wizard.setCast(Spell.STRIKE);
+        assertEquals(Spell.STRIKE, wizard.getCast());
+    }
 }
