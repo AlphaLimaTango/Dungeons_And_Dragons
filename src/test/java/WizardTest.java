@@ -22,6 +22,16 @@ public class WizardTest {
     }
 
     @Test
+    public void hasRace(){
+        assertEquals(Race.HUMAN, wizard.getRace());
+    }
+
+    @Test
+    public void hasWallet(){
+        assertEquals(100, wizard.getWallet());
+    }
+
+    @Test
     public void startsWithNullCreature(){
         assertEquals(null, wizard.getMythicalCreature());
     }
